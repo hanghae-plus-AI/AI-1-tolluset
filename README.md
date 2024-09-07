@@ -18,7 +18,12 @@ gradient descent 로 구현한 linear regression
 - 행렬 곱을 하기위해 dimension을 맞춰줘야함
 
 1-2
-MLP로 XOR 문제 해결
+Schotastic Gradient Descent 로 구현한 linear regression
+
+- SGD를 이용하여 빠르고 다양한 방향으로 값을 찾아감
+- ReLU 함수로 비선형성을 추가함
+- 학습 전에는 기존 계산된 기울기 초기화를 해주어야함
+- backward로 역전파
 
 1-3
 MNIST 데이터셋으로 MLP 구현
