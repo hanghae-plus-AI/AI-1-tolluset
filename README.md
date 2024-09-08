@@ -33,3 +33,17 @@ MNIST regression 구현
 - GPU 사용 (mac은 cuda 대신 mps)
 - mean 함수는 tensor 객체를 반환하기에 loss에서 backwards 역전파 가능
 - torchviz로 모델의 구조를 시각화함
+
+1-basic
+
+MNIST classfication 구현
+
+- 학습 데이터와 테스트 데이터 분리
+- CrossEntropyLoss 사용
+  - softmax 활성화 함수와 nllloss 손실 함수를 적용한 함수
+  - 마지막 레이어에 적용되기에 기존 모델의 마지막 활성화 함수제거하고 사용
+- classfication 예측 값 확인
+  - 마지막 레이어 아웃풋 개수는 예측하려는 클래스 개수와 통일 시켜야함
+- 학습 데이터와 테스트 데이터 간에 정확도 시각화
+
+
