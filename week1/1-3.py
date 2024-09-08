@@ -17,12 +17,11 @@ print(len(trainset))
 print(trainset[0][0].shape, trainset[0][1])
 plt.imshow(trainset[0][0][0], cmap="gray")
 
-batch_size = 32
+batch_size = 128
 
 trainloader = torch.utils.data.DataLoader(trainset, batch_size, shuffle=True)
 
 dataiter = iter(trainloader)
-print(f"🚀 : 1-3.py:21: dataiter={dataiter}")
 
 images, labels = next(dataiter)
 print(f"🚀 : 1-3.py:24: images, labels={images.shape, labels.shape}")
@@ -51,7 +50,7 @@ class Model(nn.Module):
 model = Model(28 * 28 * 1, 1024)
 
 
-lr = 0.001
+lr = 0.08
 
 # mac 지원 안함
 # model = model.to("cuda")
@@ -62,7 +61,8 @@ model.to(mps_device)
 
 optimizer = SGD(model.parameters(), lr=lr)
 
-n_epochs = 20
+n_epochs = 24
+print(f"🚀 : 1-3.py:64: bs, lr, n_epochs={batch_size, lr, n_epochs}")
 
 for epoch in range(n_epochs):
     total_loss = 0.0
@@ -94,4 +94,4 @@ print(y)
 print(trainset[idx][1])
 
 dot = make_dot(y, params=dict(model.named_parameters()))
-dot.render("model_graph", format="png")
+dot.render("1-3-model_graph", format="png")
