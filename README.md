@@ -26,4 +26,10 @@ Schotastic Gradient Descent 로 구현한 linear regression
 - backward로 역전파
 
 1-3
-MNIST 데이터셋으로 MLP 구현
+MNIST regression 구현
+
+- 배치 사이즈를 나눠 학습을 진행함
+- 레이어 마다 활성화 함수를 적용함
+- GPU 사용 (mac은 cuda 대신 mps)
+- mean 함수는 tensor 객체를 반환하기에 loss에서 backwards 역전파 가능
+- torchviz로 모델의 구조를 시각화함
