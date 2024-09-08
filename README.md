@@ -2,11 +2,10 @@
 
 학습 기록 저장용
 
-## 주차
+## 1주차
 
-### 1주차
+### 1-1
 
-1-1
 gradient descent 로 구현한 linear regression
 
 - epoch 만큼 lr 값을 기반으로 w(가중치), b(편향) 을 업데이트하며 오류와의 거리를 줄여나감
@@ -17,7 +16,8 @@ gradient descent 로 구현한 linear regression
 - mean 은 평균을 구하는 함수
 - 행렬 곱을 하기위해 dimension을 맞춰줘야함
 
-1-2
+### 1-2
+
 Schotastic Gradient Descent 로 구현한 linear regression
 
 - SGD를 이용하여 빠르고 다양한 방향으로 값을 찾아감
@@ -25,7 +25,8 @@ Schotastic Gradient Descent 로 구현한 linear regression
 - 학습 전에는 기존 계산된 기울기 초기화를 해주어야함
 - backward로 역전파
 
-1-3
+### 1-3
+
 MNIST regression 구현
 
 - 배치 사이즈를 나눠 학습을 진행함
@@ -34,7 +35,7 @@ MNIST regression 구현
 - mean 함수는 tensor 객체를 반환하기에 loss에서 backwards 역전파 가능
 - torchviz로 모델의 구조를 시각화함
 
-1-basic
+### 1-basic
 
 MNIST classfication 구현
 
@@ -45,5 +46,3 @@ MNIST classfication 구현
 - classfication 예측 값 확인
   - 마지막 레이어 아웃풋 개수는 예측하려는 클래스 개수와 통일 시켜야함
 - 학습 데이터와 테스트 데이터 간에 정확도 시각화
-
-
