@@ -46,3 +46,15 @@ MNIST classfication 구현
 - classfication 예측 값 확인
   - 마지막 레이어 아웃풋 개수는 예측하려는 클래스 개수와 통일 시켜야함
 - 학습 데이터와 테스트 데이터 간에 정확도 시각화
+
+### 1-advance
+
+- sgd와 adam 차이
+- ReLU와 Leaky ReLU 차이
+- Dropout에 대한 이해
+- 검증 시 추가 학습 방지
+
+---
+
+- 모델 학습에 필요한 값들 dataclass로 관리
+- 학습 함수에 필요한 값들 파라미터로 관리
