@@ -2,6 +2,8 @@
 
 학습 기록 저장용
 
+refs: https://github.com/hanghae-plus-AI/AI-1-tolluset
+
 ## 1주차
 
 ### 1-1
