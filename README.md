@@ -73,7 +73,17 @@ MNIST classfication 구현
 
 ### 2-rnn
 
+RNN을 이용한 imdb 감성 분석
+
 - 자연어 처리를 위해 토크나이저 사용
 - 특정 동작을 위해 특별 토큰들이 존재
 - 여러 문장을 처리하기 위해 패딩을 사용
 - 학습시에는 패딩을 제거하고 학습을 진행
+
+### 2-transformers
+
+attention을 이용한 transformer 구현
+
+- multi-head attention, 여러개의 head로 attention을 수행
+- 여러 transform layer를 쌓아서 모델을 구성
+- positional encoding을 이용하여 단어의 위치 정보를 추가
