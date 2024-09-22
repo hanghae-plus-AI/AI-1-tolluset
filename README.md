@@ -2,9 +2,11 @@
 
 ## How to
 
-- activate source `source venv/bin/activate` -> `a'`
+- activate source `source venv/bin/activate` -> `a`
 - check pip list `pip list` -> `pl`
 - install jupyter `jupyter notebook` -> `jn`
+
+-> `s`
 
 학습 기록 저장용
 
