@@ -87,3 +87,10 @@ attention을 이용한 transformer 구현
 - multi-head attention, 여러개의 head로 attention을 수행
 - 여러 transform layer를 쌓아서 모델을 구성
 - positional encoding을 이용하여 단어의 위치 정보를 추가
+
+### 2-A
+
+MHA(multi-head attention) 구현
+
+- 여러 head로 attention을 수행하기 위해 reshape, transpose를 사용
+- dropout과 normalization을 사용하여 학습을 진행
