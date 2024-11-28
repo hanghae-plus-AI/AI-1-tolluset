@@ -2,15 +2,9 @@
 
 ## How to
 
-- activate source `source venv/bin/activate` -> `a`
-- check pip list `pip list` -> `pl`
-- install jupyter `jupyter notebook` -> `jn`
 
--> `s`
 
 학습 기록 저장용
-
-refs: https://github.com/hanghae-plus-AI/AI-1-tolluset
 
 ## 1주차
 
